@@ -6,12 +6,15 @@ const PORT=5000;
 
 const connectDB = require('./config/db');
 
+
 // connect to mongodb
 connectDB();
+
 
 //Defining routes
 app.use('/', require('./routes/index'));
 app.use('/api/url', require('./routes/url'));
+
 
 
 
