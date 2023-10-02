@@ -1,22 +1,16 @@
 # URL-shortner
 This project is a URL shortner backend using NodeJs, Express and MongoDb. Short links can be generated from making a put request on `<base url>/api/url/shorten`
-<br/> <br/>
-
-
 <br/>
-
 ### Prerequisites
 - Install the latest nodeJS
-  
-<br/>
+
 
 ### Usage
 - Clone the repo 
 ```bash
-git clone git@github.com:aswinbennyofficial/URL-shortner.git
+git clone https://github.com/aswinbennyofficial/aswinbennyofficial/URL-shortner.git
 ```
 
-<br/>
 
 
 - fix dependency issues
@@ -24,18 +18,21 @@ git clone git@github.com:aswinbennyofficial/URL-shortner.git
 npm install
 ```
 
-<br/>
 
 
 - include your Mongodb connection string in the variable `MONGO_URI` in `.env` file 
-    - eg. `MONGO_URI='mongodb+srv://username:password@cluster0.qarofso.mongodb.net/url-collection?retryWrites=true&w=majority'`
+```env
+MONGO_URI='mongodb+srv://username:password@cluster0.qarofso.mongodb.net/url-collection?retryWrites=true&w=majority'
+```
 
-<br/>
+
+
   
 - include your base address in the variable `BASE_URL` in `.env` file
-    - eg. `BASE_URL='http://localhost:5000'`
+```
+BASE_URL='http://localhost:5000'
+```
 
-<br/>
 
 
 - use `npm start` to run the app
